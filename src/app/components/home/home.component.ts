@@ -12,7 +12,7 @@ export class HomeComponent {
   fruitList = ['Uva', 'Maçã', 'Banana'];
   private enviaForm = inject(EnviaFormService);
 
-  @Input() props!: string;
+  @Input("name") props!: string;
 
   clicked(){
     this.enviaForm.enviaInfoParaBackend();
