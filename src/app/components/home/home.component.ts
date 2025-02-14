@@ -7,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
+  name = "Marcos Daniel Andrea Marcela";
 
+  clicked(event: any){
+    console.log("You clicked the button.");
+  }
 }
