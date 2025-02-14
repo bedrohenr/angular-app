@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { EnviaFormService } from '../../services/envia-form.service';
 
 @Component({
   selector: 'app-home',
@@ -9,8 +10,9 @@ import { Component } from '@angular/core';
 export class HomeComponent {
   name = "Marcos Daniel Andrea Marcela";
   fruitList = ['Uva', 'Maçã', 'Banana'];
+  private enviaForm = inject(EnviaFormService);
 
-  clicked(event: any){
-    console.log("Voce clicou.");
+  clicked(){
+    this.enviaForm.enviaInfoParaBackend();
   }
 }
