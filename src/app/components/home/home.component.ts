@@ -8,8 +8,9 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
   name = "Marcos Daniel Andrea Marcela";
+  fruitList = ['Uva', 'Maçã', 'Banana'];
 
   clicked(event: any){
-    console.log("You clicked the button.");
+    console.log("Voce clicou.");
   }
 }
